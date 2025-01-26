@@ -8,9 +8,7 @@ const Newsletter = () => {
                 <p className="text-lg text-slate-600 font-inter my-3">Get the latest updates and news right in your inbox!</p>
                 <div className="flex flex-col md:flex-row gap-3">
                     <input className="input input-bordered px-6" type="text" placeholder="Enter your email" />
-                    <button className="btn bg-gradient-to-tr from-pink-400 to-yellow-400 text-black px-5">
-                        Subscribe
-                    </button>
+                    <button className="btn bg-gradient-to-tr from-pink-400 to-yellow-400 text-black px-5">Subscribe</button>
                 </div>
             </div>
         </div>

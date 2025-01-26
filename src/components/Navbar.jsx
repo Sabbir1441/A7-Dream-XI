@@ -1,6 +1,8 @@
 import logo from "../assets/logo.png";
+import { BsCoin } from "react-icons/bs";
+import PropTypes from 'prop-types';
 
-const Navbar = () => {
+const Navbar = ({ coin }) => {
   return (
     <div>
       <div className="container mx-auto flex justify-between bg-base-100 py-6 px-2">
@@ -60,7 +62,7 @@ const Navbar = () => {
             </li>
           </ul>
           <a className="border px-6 py-3 rounded-xl flex items-center gap-2 font-bold">
-             Coin 
+            <span>{coin}</span> Coin <BsCoin className="text-2xl text-yellow-500" />
           </a>
         </div>
       </div>
@@ -68,6 +70,10 @@ const Navbar = () => {
   );
 };
 
+
+Navbar.propTypes = {
+  coin: PropTypes.number
+};
 
 
 export default Navbar;
